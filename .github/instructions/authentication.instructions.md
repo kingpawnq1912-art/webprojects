@@ -1,3 +1,7 @@
+---
+description: Read this before implementing or modifying authentication in the project.
+---
+
 # Authentication Instructions
 
 - Use Clerk for all authentication and user session management. Do not add or use any other authentication method.
