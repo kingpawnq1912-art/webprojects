@@ -1,3 +1,13 @@
+import { SignOutButton } from "@clerk/nextjs";
+import { Button } from "@/components/ui/button";
+
 export default function Dashboard() {
-  return <h1>Dashboard</h1>;
+  return (
+    <main className="flex min-h-screen flex-col items-center justify-center gap-4 bg-background text-foreground">
+      <h1 className="text-2xl font-semibold">Dashboard</h1>
+      <SignOutButton redirectUrl="/">
+        <Button variant="outline">Sign out</Button>
+      </SignOutButton>
+    </main>
+  );
 }
